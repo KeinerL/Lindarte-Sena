@@ -12,3 +12,24 @@ Migrating to CreateTests (20250224163606)
   [1m[36mTRANSACTION (43.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
   [1m[36mTest Load (2.5ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
   [1m[36mTest Load (34.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Migrating to CreateCarros (20250224164631)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "carros" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "color" varchar, "ruedas" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250224164631') RETURNING "version" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (58.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mTest Load (38.8ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCarro Create (2.1ms)[0m  [1m[32mINSERT INTO "carros" ("nombre", "color", "ruedas", "created_at", "updated_at") VALUES ('toyota', 'azul', NULL, '2025-02-24 16:48:49.402951', '2025-02-24 16:48:49.402951') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (44.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCarro Load (3.7ms)[0m  [1m[34mSELECT "carros".* FROM "carros" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCarro Destroy (1.0ms)[0m  [1m[31mDELETE FROM "carros" WHERE "carros"."id" = 1 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCarro Load (2.9ms)[0m  [1m[34mSELECT "carros".* FROM "carros" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTest Load (1.1ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTest Load (0.8ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTest Delete All (1.7ms)[0m  [1m[31mDELETE FROM "tests" /*application='MiApi'*/[0m
+  [1m[36mTest Load (3.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
