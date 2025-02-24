@@ -33,3 +33,71 @@ Migrating to CreateCarros (20250224164631)
   [1m[36mTest Load (0.8ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
   [1m[36mTest Delete All (1.7ms)[0m  [1m[31mDELETE FROM "tests" /*application='MiApi'*/[0m
   [1m[36mTest Load (3.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mCarro Load (127.8ms)[0m  [1m[34mSELECT "carros".* FROM "carros" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTest Load (1.8ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "carros" /*application='MiApi'*/[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "carros" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "color" varchar, "ruedas" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='MiApi'*/[0m
+  [1m[35m (4.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "people" /*application='MiApi'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "people" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "cedula" varchar, "nombre" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='MiApi'*/[0m
+  [1m[35m (2.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "tests" /*application='MiApi'*/[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "tests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "edad" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='MiApi'*/[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250224164631) /*application='MiApi'*/[0m
+  [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250224163606); /*application='MiApi'*/[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-02-24 21:23:56.577058', '2025-02-24 21:23:56.577064') RETURNING "key" /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '3b3ad8fa6ad5025fee5c36bdde12e3b0939d0b68', '2025-02-24 21:23:56.593710', '2025-02-24 21:23:56.593714') RETURNING "key" /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mCarro Load (63.3ms)[0m  [1m[34mSELECT "carros".* FROM "carros" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTest Load (1.9ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCarro Create (3.1ms)[0m  [1m[32mINSERT INTO "carros" ("nombre", "color", "ruedas", "created_at", "updated_at") VALUES ('ford', 'azul', 4, '2025-02-24 21:26:12.406001', '2025-02-24 21:26:12.406001') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (14.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCarro Load (5.2ms)[0m  [1m[34mSELECT "carros".* FROM "carros" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+Started GET "/carro" for 172.17.0.1 at 2025-02-24 21:30:44 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by CarroController#index as HTML
+  [1m[36mCarro Load (30.2ms)[0m  [1m[34mSELECT "carros".* FROM "carros" /*action='index',application='MiApi',controller='carro'*/[0m
+  ↳ app/controllers/carro_controller.rb:4:in `index'
+Completed 200 OK in 330ms (Views: 15.6ms | ActiveRecord: 35.3ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/favicon.ico" for 172.17.0.1 at 2025-02-24 21:30:45 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/carro/1" for 172.17.0.1 at 2025-02-24 21:31:22 +0000
+Processing by CarroController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarro Load (1.4ms)[0m  [1m[34mSELECT "carros".* FROM "carros" WHERE "carros"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='carro'*/[0m
+  ↳ app/controllers/carro_controller.rb:7:in `show'
+Completed 200 OK in 78ms (Views: 0.6ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCarro Create (9.5ms)[0m  [1m[32mINSERT INTO "carros" ("nombre", "color", "ruedas", "created_at", "updated_at") VALUES ('generico', 'blanco', 6, '2025-02-24 21:36:08.679680', '2025-02-24 21:36:08.679680') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+Started GET "/carro" for 172.17.0.1 at 2025-02-24 21:36:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by CarroController#index as HTML
+  [1m[36mCarro Load (46.1ms)[0m  [1m[34mSELECT "carros".* FROM "carros" /*action='index',application='MiApi',controller='carro'*/[0m
+  ↳ app/controllers/carro_controller.rb:4:in `index'
+Completed 200 OK in 267ms (Views: 21.1ms | ActiveRecord: 54.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/carro/2" for 172.17.0.1 at 2025-02-24 21:36:50 +0000
+Processing by CarroController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCarro Load (1.1ms)[0m  [1m[34mSELECT "carros".* FROM "carros" WHERE "carros"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='carro'*/[0m
+  ↳ app/controllers/carro_controller.rb:7:in `show'
+Completed 200 OK in 13ms (Views: 0.7ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mTest Load (61.8ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
