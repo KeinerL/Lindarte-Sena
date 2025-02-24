@@ -1,0 +1,14 @@
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Migrating to CreateTests (20250224163606)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "tests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "edad" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250224163606') RETURNING "version" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (40.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mTest Load (2.3ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTest Create (2.1ms)[0m  [1m[32mINSERT INTO "tests" ("nombre", "edad", "created_at", "updated_at") VALUES ('Keiner', '18', '2025-02-24 16:38:07.627743', '2025-02-24 16:38:07.627743') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (43.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTest Load (2.5ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTest Load (34.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
