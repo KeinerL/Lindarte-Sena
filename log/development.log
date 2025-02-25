@@ -196,3 +196,543 @@ Processing by TestController#show as HTML
 Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
 
 
+  [1m[36mCarro Load (33.3ms)[0m  [1m[34mSELECT "carros".* FROM "carros" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Migrating to Droptests (20250225015454)
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[35m (3.2ms)[0m  [1m[35mDROP TABLE "tests" /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250225015454') RETURNING "version" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (37.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Migrating to CreateUsers (20250225020010)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "edad" integer, "profesion" varchar, "correo" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250225020010') RETURNING "version" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (42.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Migrating to CreateCars (20250225020243)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "cars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "modelo" varchar, "placa" varchar, "color" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250225020243') RETURNING "version" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (37.8ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Keiner', 18, 'aprendiz', 'keinerlindarte2@gmail.com', '2025-02-25 02:17:23.503268', '2025-02-25 02:17:23.503268') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (40.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (4.6ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Pablo', 20, 'aprendiz', 'pabloreal@gmail.com', '2025-02-25 02:17:23.551182', '2025-02-25 02:17:23.551182') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Juan', 30, 'instructor', 'juantomas27@gmail.com', '2025-02-25 02:17:23.561247', '2025-02-25 02:17:23.561247') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Lucas', 23, 'aprendiz', 'lucasgod777@gmail.com', '2025-02-25 02:17:23.568836', '2025-02-25 02:17:23.568836') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Jose', 46, 'instructor', 'josereinaldo@gmail.com', '2025-02-25 02:17:23.576052', '2025-02-25 02:17:23.576052') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Load (29.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mCar Load (2.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Keiner', 18, 'aprendiz', 'keinerlindarte2@gmail.com', '2025-02-25 02:21:55.097881', '2025-02-25 02:21:55.097881') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (37.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (5.6ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Pablo', 20, 'aprendiz', 'pabloreal@gmail.com', '2025-02-25 02:21:55.143246', '2025-02-25 02:21:55.143246') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Juan', 30, 'instructor', 'juantomas27@gmail.com', '2025-02-25 02:21:55.153878', '2025-02-25 02:21:55.153878') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Lucas', 23, 'aprendiz', 'lucasgod777@gmail.com', '2025-02-25 02:21:55.161749', '2025-02-25 02:21:55.161749') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Jose', 46, 'instructor', 'josereinaldo@gmail.com', '2025-02-25 02:21:55.169195', '2025-02-25 02:21:55.169195') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.5ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('hyundai', 'HCS457', 'rojo', '2025-02-25 02:21:55.194259', '2025-02-25 02:21:55.194259') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (3.3ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ford', 'XDS453', 'blanco', '2025-02-25 02:21:55.212478', '2025-02-25 02:21:55.212478') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (3.7ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('toyota', 'WQE414', 'azul', '2025-02-25 02:21:55.220428', '2025-02-25 02:21:55.220428') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (3.2ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ferrari', 'XZC754', 'gris', '2025-02-25 02:21:55.229067', '2025-02-25 02:21:55.229067') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.9ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ford', 'ZCQ145', 'negro', '2025-02-25 02:21:55.237109', '2025-02-25 02:21:55.237109') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Load (33.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (3.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 1 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (24.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (10.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 2 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 3 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 4 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 5 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 6 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 7 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (3.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 8 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 9 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 10 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mCar Load (0.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Destroy (1.5ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = 1 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Destroy (2.4ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = 2 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Destroy (1.9ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = 3 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Destroy (2.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = 4 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Destroy (4.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = 5 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Load (1.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.6ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Keiner', 18, 'aprendiz', 'keinerlindarte2@gmail.com', '2025-02-25 02:24:55.294669', '2025-02-25 02:24:55.294669') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (43.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (4.6ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Pablo', 20, 'aprendiz', 'pabloreal@gmail.com', '2025-02-25 02:24:55.344427', '2025-02-25 02:24:55.344427') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Juan', 30, 'instructor', 'juantomas27@gmail.com', '2025-02-25 02:24:55.354542', '2025-02-25 02:24:55.354542') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Lucas', 23, 'aprendiz', 'lucasgod777@gmail.com', '2025-02-25 02:24:55.362156', '2025-02-25 02:24:55.362156') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Jose', 46, 'instructor', 'josereinaldo@gmail.com', '2025-02-25 02:24:55.369877', '2025-02-25 02:24:55.369877') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.2ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('hyundai', 'HCS457', 'rojo', '2025-02-25 02:24:55.395651', '2025-02-25 02:24:55.395651') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.9ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ford', 'XDS453', 'blanco', '2025-02-25 02:24:55.412226', '2025-02-25 02:24:55.412226') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (3.3ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('toyota', 'WQE414', 'azul', '2025-02-25 02:24:55.419773', '2025-02-25 02:24:55.419773') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.9ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ferrari', 'XZC754', 'gris', '2025-02-25 02:24:55.427585', '2025-02-25 02:24:55.427585') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.9ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ford', 'ZCQ145', 'negro', '2025-02-25 02:24:55.435459', '2025-02-25 02:24:55.435459') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Load (33.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (1.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 11 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (25.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (5.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 12 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 13 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 14 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Destroy (2.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 15 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE users AUTO_INCREMENT = 1 /*application='MiApi'*/[0m
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_get_serial_sequence('nombre_de_la_tabla', 'id') /*application='MiApi'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_get_serial_sequence('users', 'id') /*application='MiApi'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[31mDELETE FROM sqlite_sequence WHERE name='nombre_de_la_tabla' /*application='MiApi'*/[0m
+  [1m[35m (1.5ms)[0m  [1m[31mDELETE FROM sqlite_sequence WHERE name='users' /*application='MiApi'*/[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES (NULL, NULL, NULL, NULL, '2025-02-25 02:31:53.596144', '2025-02-25 02:31:53.596144') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Delete All (1.7ms)[0m  [1m[31mDELETE FROM "users" /*application='MiApi'*/[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[35m (1.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence WHERE name='users' /*application='MiApi'*/[0m
+  [1m[35m (2.6ms)[0m  [1m[31mDELETE FROM sqlite_sequence WHERE name='cars' /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Keiner', 18, 'aprendiz', 'keinerlindarte2@gmail.com', '2025-02-25 02:33:28.559019', '2025-02-25 02:33:28.559019') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (31.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (5.6ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Pablo', 20, 'aprendiz', 'pabloreal@gmail.com', '2025-02-25 02:33:28.597795', '2025-02-25 02:33:28.597795') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Juan', 30, 'instructor', 'juantomas27@gmail.com', '2025-02-25 02:33:28.609166', '2025-02-25 02:33:28.609166') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Lucas', 23, 'aprendiz', 'lucasgod777@gmail.com', '2025-02-25 02:33:28.616321', '2025-02-25 02:33:28.616321') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Jose', 46, 'instructor', 'josereinaldo@gmail.com', '2025-02-25 02:33:28.623583', '2025-02-25 02:33:28.623583') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.6ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('hyundai', 'HCS457', 'rojo', '2025-02-25 02:33:28.648857', '2025-02-25 02:33:28.648857') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (12.7ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ford', 'XDS453', 'blanco', '2025-02-25 02:33:28.656096', '2025-02-25 02:33:28.656096') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (3.1ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('toyota', 'WQE414', 'azul', '2025-02-25 02:33:28.673896', '2025-02-25 02:33:28.673896') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.8ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ferrari', 'XZC754', 'gris', '2025-02-25 02:33:28.682621', '2025-02-25 02:33:28.682621') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.8ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ford', 'ZCQ145', 'negro', '2025-02-25 02:33:28.690432', '2025-02-25 02:33:28.690432') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Load (32.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mCar Load (0.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Delete All (34.3ms)[0m  [1m[31mDELETE FROM "users" /*application='MiApi'*/[0m
+  [1m[36mCar Delete All (4.4ms)[0m  [1m[31mDELETE FROM "cars" /*application='MiApi'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[31mDELETE FROM sqlite_sequence WHERE name='users' /*application='MiApi'*/[0m
+  [1m[35m (2.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence WHERE name='cars' /*application='MiApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Keiner', 18, 'aprendiz', 'keinerlindarte2@gmail.com', '2025-02-25 02:34:43.991176', '2025-02-25 02:34:43.991176') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (27.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (3.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Pablo', 20, 'aprendiz', 'pabloreal@gmail.com', '2025-02-25 02:34:44.025330', '2025-02-25 02:34:44.025330') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Juan', 30, 'instructor', 'juantomas27@gmail.com', '2025-02-25 02:34:44.033829', '2025-02-25 02:34:44.033829') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Lucas', 23, 'aprendiz', 'lucasgod777@gmail.com', '2025-02-25 02:34:44.041440', '2025-02-25 02:34:44.041440') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "edad", "profesion", "correo", "created_at", "updated_at") VALUES ('Jose', 46, 'instructor', 'josereinaldo@gmail.com', '2025-02-25 02:34:44.048667', '2025-02-25 02:34:44.048667') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.1ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('hyundai', 'HCS457', 'rojo', '2025-02-25 02:34:44.073596', '2025-02-25 02:34:44.073596') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.8ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ford', 'XDS453', 'blanco', '2025-02-25 02:34:44.089952', '2025-02-25 02:34:44.089952') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (3.3ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('toyota', 'WQE414', 'azul', '2025-02-25 02:34:44.097112', '2025-02-25 02:34:44.097112') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.7ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ferrari', 'XZC754', 'gris', '2025-02-25 02:34:44.105180', '2025-02-25 02:34:44.105180') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Create (2.9ms)[0m  [1m[32mINSERT INTO "cars" ("modelo", "placa", "color", "created_at", "updated_at") VALUES ('ford', 'ZCQ145', 'negro', '2025-02-25 02:34:44.112973', '2025-02-25 02:34:44.112973') RETURNING "id" /*application='MiApi'*/[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
+  [1m[36mCar Load (33.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+Started GET "/test" for 172.17.0.1 at 2025-02-25 02:45:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/test"):
+  
+Started GET "/users" for 172.17.0.1 at 2025-02-25 02:46:51 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 172.17.0.1 at 2025-02-25 02:47:08 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 172.17.0.1 at 2025-02-25 02:47:11 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/1" for 172.17.0.1 at 2025-02-25 02:47:48 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users/1"):
+  
+Started GET "/user" for 172.17.0.1 at 2025-02-25 02:48:00 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (26.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 116ms (Views: 13.1ms | ActiveRecord: 29.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:48:08 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000b108>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/test" for 172.17.0.1 at 2025-02-25 02:48:27 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/test"):
+  
+Started GET "/user" for 172.17.0.1 at 2025-02-25 02:48:32 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2" for 172.17.0.1 at 2025-02-25 02:48:49 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000b478>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/user" for 172.17.0.1 at 2025-02-25 02:49:12 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user" for 172.17.0.1 at 2025-02-25 02:49:58 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user" for 172.17.0.1 at 2025-02-25 02:50:37 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:50:52 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000b720>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:51:05 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000b8d8>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:52:07 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000ba90>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/user" for 172.17.0.1 at 2025-02-25 02:52:15 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users" for 172.17.0.1 at 2025-02-25 02:53:15 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/1" for 172.17.0.1 at 2025-02-25 02:53:25 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users/1"):
+  
+Started GET "/user" for 172.17.0.1 at 2025-02-25 02:53:46 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:54:19 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000bf68>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:54:55 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000c120>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:56:28 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000c2d8>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:58:30 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rende' for #<UserController:0x0000000000c4b8>):
+  
+app/controllers/user_controller.rb:8:in `show'
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 02:59:00 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 66ms (Views: 0.3ms | ActiveRecord: 29.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user" for 172.17.0.1 at 2025-02-25 02:59:14 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 03:01:07 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 03:08:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 156ms (Views: 0.7ms | ActiveRecord: 29.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/user/1" for 172.17.0.1 at 2025-02-25 03:14:45 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/user/1"):
+  
+Started POST "/user/1" for 172.17.0.1 at 2025-02-25 03:14:53 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/user/1"):
+  
+Started POST "/user/1" for 172.17.0.1 at 2025-02-25 03:15:31 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/user/1"):
+  
+Started POST "/user/1" for 172.17.0.1 at 2025-02-25 03:17:28 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/user/1"):
+  
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 03:19:53 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (28.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 67ms (Views: 0.4ms | ActiveRecord: 28.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1" for 172.17.0.1 at 2025-02-25 03:19:58 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user" for 172.17.0.1 at 2025-02-25 03:20:02 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2" for 172.17.0.1 at 2025-02-25 03:20:56 +0000
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
